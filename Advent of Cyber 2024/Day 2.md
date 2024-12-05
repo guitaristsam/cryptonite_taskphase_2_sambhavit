@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/22d9a678-78e8-4b2e-84af-5c9806f1b3d5)# <ins>Day 2: One man's false positive is another man's potpourri.</ins>
+# <ins>Day 2: One man's false positive is another man's potpourri.</ins>
 
 ## <ins>Challenge Objective:</ins>
 > Investigate alerts triggered on **December 1, 2024**, between **0900 and 0930** using the Elastic SIEM tool.         
