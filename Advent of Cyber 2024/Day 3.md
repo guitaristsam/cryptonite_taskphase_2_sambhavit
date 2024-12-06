@@ -1,27 +1,41 @@
-![image](https://github.com/user-attachments/assets/777833e6-4543-4fae-aba0-69fb002e6e2e)
+# <ins> Day 3: Even if I wanted to go, their vulnerabilities wouldn't allow it.</ins>
 
 
-![image](https://github.com/user-attachments/assets/4cf9bc5a-26e3-4767-873c-4ccb73b50472)
+## <ins>Challenge Objective:</ins>
+> Investigate a web server attack using ELK and exploit a Remote Code Execution (RCE) vulnerability via insecure file uploads.
+> Analyze logs using ELK.
+> Use Kibana Query Language (KQL) for filtering logs.
+> Understand RCE and exploit it via an insecure file upload.
 
+## <ins>Walkthrough:</ins>    
 
+### <ins>Accessing Kibana:</ins>
+Connected through OpenVpn and connected to Kibana.
 
-
+### <ins>Loading the Relevant Collection:</ins>
+Loaded up the logs of the attack on Frosty Pines Resorts by selecting the `frostypines-resorts` collection within ELK.    
+I went over to the **Discover** tab to see events and set the correct given time range.
 
 
 ![image](https://github.com/user-attachments/assets/e839f7f0-abd9-40d0-afd8-e5ff3ffc14da)
 
-`sudo nano /etc/hosts`
+
+### <ins>Adding to hosts:</ins>
+
+Went over to the terminal and added `frostypines.thm` with the IP with the command `sudo nano /etc/hosts`.   
 
 ![image](https://github.com/user-attachments/assets/4b63952c-772e-48a3-881e-87e342b037ab)
 
 
-
+Then pinged it to confirm the connection.    
 
 ![image](https://github.com/user-attachments/assets/3ee36662-3e60-4902-97c9-c57fb16fdf72)
 
 
-![image](https://github.com/user-attachments/assets/b498129f-eae0-496e-be5d-0ab355cc5982)
 
+### <ins>Trying to find directories:</ins>
+
+Used `dirsearch` to find the directories in **`http://frostypines.thm/`**.
 
 ```
 ┌──(kali㉿kali)-[~]
@@ -96,28 +110,28 @@ Target: http://frostypines.thm/
 Task Completed 
 ```
 
-saw admin
+Using this I found `[08:11:14] 301 -  325B  - /admin  ->  http://frostypines.thm/public/admin/`   
+This gave me the admin directory.   
+There I found out that I could upload a file(this is what was initially used to gain access), by uploading a reverse shell.    
 
 
 ![image](https://github.com/user-attachments/assets/891ea52b-f16f-4960-97eb-3b1c1d1b868d)
 
-
-
-
+I then made a file called `shell.php` using the terminal by using the given code in the TryHackMe(for revershell).
 
 
 ![image](https://github.com/user-attachments/assets/6313d004-c7e3-443f-ad50-af8b1658723f)
 
-
+Uploaded this file and reloaded the page to find where it was being stored.   
 
 ![image](https://github.com/user-attachments/assets/80a4dbad-551d-445b-b1bd-a3bec681dc03)
 
 ![image](https://github.com/user-attachments/assets/dea3aee8-279e-493b-bc8e-6c5c15cc85ea)
 
-`http://frostypines.thm/media/images/rooms/shell.php`
+Using `Network` I found out it was being stored in `http://frostypines.thm/media/images/rooms/shell.php`.    
 
+Then I navigated to it and saw that webshell was working and ran the command `cat flag.txt`, to find the flag.   
 
-Saw that webshell was working and ran `cat flag.txt`.
 
 ![image](https://github.com/user-attachments/assets/ec6fcd47-7d12-420a-af19-2c8107437332)
 
