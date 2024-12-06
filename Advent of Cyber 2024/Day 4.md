@@ -1,9 +1,15 @@
-# <ins>Day 4: I’m all atomic inside</ins>
+# <ins>Day 4: I’m all atomic inside</ins>    
 
 ## <ins>Challenge Objective:</ins>
-> Learn how to identify malicious techniques using the MITRE ATT&CK framework.
-> Learn about how to use Atomic Red Team tests to conduct attack simulations.
-> Understand how to create alerting and detection rules from the attack tests.
+> Learn how to identify malicious techniques using the **MITRE ATT&CK** framework.     
+> Learn about how to use Atomic Red Team tests to conduct attack simulations.     
+> Understand how to create alerting and detection rules from the attack tests.    
+
+### <ins>Connection:</ins>
+Connected using Remmina, using the credentials provided for RDP access:    
+- **Username:** Administrator  
+- **Password:** Emulation101!  
+- **IP:** `MACHINE_IP`
 
 ![image](https://github.com/user-attachments/assets/d7048906-3ac0-4441-bec3-57bd9668ec4a)
 
@@ -129,14 +135,19 @@ Done executing cleanup for test: T1566.001-1 Download Macro-Enabled Phishing Att
 
 ![image](https://github.com/user-attachments/assets/e1e175ad-3a2f-404d-8ef4-2632906913f1)
 
+Used the words `command and scripting interpreter` to find **`T1059`**
+![image](https://github.com/user-attachments/assets/00189456-8c4f-4342-b6c0-90b49a904689)
+
+
+Then used to find subsection `Windows Command Shell` to find **`ID: T1059.003`**.
+
+![image](https://github.com/user-attachments/assets/e44c9ef8-7031-4920-ba1c-01435dee2921)
 
 
 
 
+Ran the same commands as before just with `T1059` instead:
 
-
-
-WEBBB
 
 
 ```
@@ -295,6 +306,6 @@ Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/ato
 ![image](https://github.com/user-attachments/assets/f61af580-5723-4ab3-8a97-29a6564ce596)
 
 
-
+Then solved given questions using this information:
 
 ![image](https://github.com/user-attachments/assets/1525ed0a-a5fc-429c-8ec9-f1316ef28169)
