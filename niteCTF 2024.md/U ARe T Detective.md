@@ -109,6 +109,6 @@ using this, I marked points and saw that I was getting a baud rate of about `16,
 > which translate to many unprintable ASCII letters that became `ÿÿÿÿù\x0fòù\x7fÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ\x97\x03/\x97ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ 2ÿ/ÿÿÿÿÿÿÿÿÿÿÿÿþ2È~?ÿÿÿÿÿÿÿÿÿÿÿÿòù\x7fòÿÿÿÿÿÿÿÿÿÿÿÿÿÈ\x7f\x97Ëÿÿÿÿÿÿÿÿÿÿÿÿÿ \x00ù\x0fÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþ\x07ù~?ÿÿÿÿÿÿÿÿÿÿÿÿÿòÿþ2ÿÿÿÿÿÿÿÿÿÿÿÿÿËä?Ëÿÿÿÿÿÿÿÿÿÿÿÿÿ 2ÿ/ÿÿÿÿÿÿÿÿÿÿÿÿþ\x00È~?ÿÿÿÿÿÿÿÿÿÿÿÿòÿþ2ÿÿÿÿÿÿÿÿÿÿÿÿÿÈd\x07Ëÿÿÿÿÿÿÿÿÿÿÿÿÿ\x90\x19~\x07ÿÿÿÿÿÿÿÿÿÿÿÿ\x19eÿ\x1fÿÿÿÿÿù\x01\x90ù\x7fÿÿÿÿÿÿÿÿÿåÿùeÿÿÿÿÿÿÿ\x90È\x7f\x97ÿÿÿÿÿÿÿÿÿÿÿÿ\x00eò\x1fÿÿÿÿÿÿÿÿÿÿÿù\x01\x97ù\x7fÿÿÿÿÿÿÿÿÿÿÿåò\x1f!ÿÿÿÿÿÿÿÿÿÿÿÿù\x0f\x90ù\x7fÿÿÿÿÿÿÿ.?ÿ/ÿÿÿÿ
 `,which was very far from the actual answer.
 
-> 
+> • Saw https://electronics.stackexchange.com/questions/501849/decode-analyse-the-following-uart-signals and tried to decode it myself, which I must say was less help and more work than expected, but it was wrong even after decoding it again.
 > 
 > 
