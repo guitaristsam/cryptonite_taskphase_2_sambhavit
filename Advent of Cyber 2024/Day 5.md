@@ -1,8 +1,15 @@
-# Day 5: SOC-mas XX-what-ee?
+# <ins>Day 5: SOC-mas XX-what-ee?</ins>
+
+## <ins>Challenge Objective:</ins>    
+> Understand the basic concepts related to XML            
+> Explore XML External Entity (XXE) and its components        
+> Learn how to exploit the vulnerability          
+> Understand remediation measures
+     
+## <ins>Walkthrough:</ins>    
 
 
-
-
+### <ins>Using Burpsuite:</ins>
 ![image](https://github.com/user-attachments/assets/b8b3abfc-8975-4678-ace2-4c9d30d76790)
 
 ![image](https://github.com/user-attachments/assets/8e581bc1-3c02-4966-8d7f-7ac92d3df454)
@@ -16,3 +23,6 @@
 ![image](https://github.com/user-attachments/assets/5b780ba3-f528-43d4-b554-8fd5641b1221)
 ![image](https://github.com/user-attachments/assets/839d58a7-47ea-46cf-9c60-aefa6e35e545)
 ![image](https://github.com/user-attachments/assets/d8cfcfb1-29ba-4cb3-be08-c097025a87cb)
+
+Then solved given questions using this information:
+![image](https://github.com/user-attachments/assets/bac933e6-c6e9-45aa-b28d-b4a392cac1e2)
