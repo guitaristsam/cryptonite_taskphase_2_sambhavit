@@ -1,10 +1,10 @@
 # <ins>Day 6: If I can't find a nice malware to use, I'm not going.</ins>
 
 ## <ins>Challenge Objective:</ins>
-> Analyze malware behaviour using sandbox tools.
-> Explore how to use YARA rules to detect malicious patterns.
-> Learn about various malware evasion techniques.
-> Implement an evasion technique to bypass YARA rule detection.
+> Analyze malware behaviour using sandbox tools.            
+> Explore how to use YARA rules to detect malicious patterns.                                      
+> Learn about various malware evasion techniques.                  
+> Implement an evasion technique to bypass YARA rule detection.                       
 
 First I started the machine and went into the attackbox:         
 ![image](https://github.com/user-attachments/assets/7305ec9a-e268-43bb-b993-247b2ca6750f)
